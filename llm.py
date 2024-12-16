@@ -16,45 +16,7 @@ import base64
 
 from openai import OpenAI
 from configuration import Config
-
-
-# class GPT:
-
-#     def __init__(self, model_name):
-#         self.model = model_name
-#         self.llm = OpenAI(api_key=Config.OPENAI_API_KEY)
-
-#     def encode_image(self, path):
-#         with open(path, 'rb') as f:
-#             return base64.b64encode(f.read()).decode('utf-8')
-
-#     def base_inference(self, query, image_path):
-#         base64_image = self.encode_image(image_path)
-#         url = f"data:image/jpeg;base64,{base64_image}"
-#         response = self.llm.chat.completions.create(
-#             model=self.model,
-#             messages=[{"role": "user", "content": [{"type": "image_url", "image_url": {"url": url}}, {"type": "text", "text": query}]}])
-#         return response.choices[0].message.content
-
-# class GPT_sft:
-
-#     def __init__(self, model_name="ft:gpt-4o-2024-08-06:university-of-maryland:guessrpro:ANRxwSsD"):
-#         self.model = model_name
-#         self.llm = OpenAI(api_key=Config.MODEL.OPENAI_API_KEY)
-
-#     def encode_image(self, path):
-#         with open(path, 'rb') as f:
-#             return base64.b64encode(f.read()).decode('utf-8')
-
-#     def base_inference(self, query, image_path):
-#         base64_image = self.encode_image(image_path)
-#         url = f"data:image/jpeg;base64,{base64_image}"
-#         response = self.llm.chat.completions.create(
-#             model=self.model,
-#             messages=[{"role": "user", "content": [{"type": "image_url", "image_url": {"url": url}}, {"type": "text", "text": query}]}])
-#         return response.choices[0].message.content
     
-
 
 class LLaVA:
 
