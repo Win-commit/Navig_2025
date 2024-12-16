@@ -1,9 +1,5 @@
 #!/bin/bash
-#SBATCH --qos=default
-#SBATCH --gres=gpu:rtxa4000:1
-#SBATCH --time=0:30:0
-#SBATCH --output=geo.out
-#SBATCH --error=geo.err
+
 source ~/.bashrc
 module load cuda/11.8.0
 module load gcc/11.2.0  
