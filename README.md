@@ -1,5 +1,5 @@
 # Navig_2025
-
+A repository of copies of  [NAVIG: Natural Language-guided Analysis with Vision Language Models for Image Geo-localization](https://arxiv.org/abs/2502.14638)
 ## preliminary
 - torch : 2.2.2, CUDA: 11.8, python:3.10.14
 - Creat the environment according to environment.txt
